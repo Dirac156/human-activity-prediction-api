@@ -25,7 +25,7 @@ def index():
     index: homepage
     render the homepage when a user visits the page
     """
-    return render_template('index.html')
+    return "API is on", 200
 
 @app.route("/upload", methods=['POST'])
 def upload_video():
